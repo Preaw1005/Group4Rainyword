@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>inspect</title>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+            integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        </style>
+    </head>
+    <body>
+        <h1 style="
+        color:#EB6DA8;
+        font-size: 120px;
+        position: absolute; 
+        left: 550px;
+        top: 70px;
+        -webkit-text-stroke: 3px black;
+        ">Rainy<br>Word</h1> 
+    
+        <h2 style="color: #D73D60; font-size: 58px; position: absolute; top:390px; left:350px">Total</h2>
+        <h2 style="color: #D73D60; font-size: 58px; position: absolute; top:455px; left:250px">online users</h2>
+        <h1 id="users-count" style="color: #D73D60; font-size: 120px; position: absolute; top:545px; left:390px"></h1>
+
+        <div id="show-user-room">
+            <box id="show-user-room-box"style="position: absolute;
+            top: 320px;
+            left: 750px;
+            height: 392px; 
+            width: 485px;
+            background-color: #fff;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 32px;">
+            </box>
+            <h1 id="text" style="color: #EB6DA8; position: absolute; top: 340px;left:900px;">Users</h1>   
+            <div id="show" style="position: absolute; top: 410px; left:800px"></div>    
+        </div>
+     
+        <a href="welcome.html">
+            <i class="fas fa-arrow-left" style="transform: scale(1);"></i>
+            Back to game</a>
+
+        <button id="reset" style="color: #FFF;
+        height: 50px;
+        width : 150px;
+        border: 2px solid #fff;
+        background: #EF84B6;
+        border-radius: 8px;
+        padding: 10px 36px;
+        display: inline-block;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 15px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
+        position: absolute;
+        left: 1200px;
+        top:35px">reset</button>    
+        
+        <script src = 'index.js'></script>
+    </body>
+</html>

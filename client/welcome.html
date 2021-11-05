@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Welcome</title>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+            integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        </style>
+        
+    </head>
+    <body>
+        <h1 style="
+        color:#EB6DA8;
+        font-size: 120px;
+        position: absolute; 
+        left: 550px;
+        top: 70px;
+        -webkit-text-stroke: 3px black;
+        ">Rainy<br>Word</h1>
+
+        <a href="inspect.html">
+            <button id="users-count" class="buttonuser">online users: </button>
+        </a>
+
+        <button id="joingame-button" class="buttonzoom" style="position: absolute;
+        left: 300px;
+        top: 320px;
+        background: #EF84B6;">Join Game</button>
+
+        <input type="text" id="roomcode" placeholder="Enter code here" style="height: 100px; 
+        width: 350px; 
+        border-radius: 8px; 
+        margin-left: 205px;
+        margin-top: 500px;
+        text-align: center;
+        font-family: 'Luckiest Guy', cursive;
+        font-size: 36px;">
+
+        
+        <button id="newgame-button" class="buttonzoom" style="position: absolute;
+        left: 800px;
+        top: 320px;
+        background: #EF84B6;">New Game</button>
+
+        <a href="howtoplay.html"><i class="fas fa-info-circle" style="color: #EF84B6;position: absolute; top: 250px; left: 910px;transform: scale(2);"></i></a>
+        
+ 
+        <div style="position: absolute;
+        left: 190px;
+        top: 290px;   
+        transform: rotate(-14.63deg);   
+        "><img src="water.png" width="163.8px" height="163.8px"></div>
+
+        <div style="position: absolute;
+        left: 1100px;
+        top: 480px;
+        transform: rotate(-14.77deg);
+        "><img src="umbrella.png" width="136.55px" height="134.8px"></div>
+
+        <script src = 'index.js'></script>
+    </body>
+</html>

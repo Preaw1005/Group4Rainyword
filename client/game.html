@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset=“UTF-8”>
+        <link rel="stylesheet" href="game.css">
+        <title>RainyWordGame</title>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+            integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        
+    </head> 
+    <body>
+        <p style="position: absolute; left: 275px;top:55px;color: #D73D60;">change background here!</p>
+        <button id="rain-bg" class="button" style="position: absolute; top:30px; left:275px; width: 100px" >&#x1F302;</button>
+        <button id="blue-bg" class="button" style="position: absolute; top:30px; left:400px; width: 100px" >&#x1F326;</button>
+        <div id="topPart">
+            <div id="logo">
+                <img id="rainylogo" height="100px" src="images/group 6.png" alt="rainy words">
+            </div>
+            <div id="scoreCard">
+                <span id="yourscore">
+                    Your Score: 0
+                </span>
+                <span id="opponentscore">
+                    Opponent Score: 0
+                </span>
+            </div>
+            <div id="timer">
+                <span id="timerlabel">Time Left</span><br>
+                <span id="timeleft"></span>
+            </div>
+            <div>
+                <button id="reset-button" class="endButton" style="position: absolute;
+                top: 25px;
+                left: 980px;" >END GAME</button>
+            </div>
+            
+        </div>
+        <div id="main" class="game_box">
+            <!--  -->
+        </div>
+        <div id="bottomPart">
+            <input id="inputBox" type="text" placeholder="Type word here" style="font-family: 'Luckiest Guy', cursive; color:#D73D60;" >
+
+            <div id="playerinfo">
+                <div id="playerimage">
+                    <img height="100px" style="margin: auto;" id="host_avatar">
+                </div>
+                <div id="playername">
+                    <div id="host_name"></div>
+                </div>
+                
+            </div>
+           
+            
+        </div><script src = 'index.js'></script>
+    </body>
+</html>

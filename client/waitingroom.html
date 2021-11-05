@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+      integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+      crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <title>waiting</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+            </style>
+            <link rel="stylesheet" href="styles.css">
+
+    </head>
+        <body>
+
+          <div id="logo">
+            <img id="rainylogo" height="100px" src="images/group 6.png" alt="rainy words">
+          </div>
+            <i id="copy-code" class="fas fa-copy" style="color: #D73D60;position: absolute; top: 90px; left: 1200px;transform: scale(2.5);"></i>
+            <!-- <button id="copy-code" class="buttonlevel" style="position: absolute;
+            left: 550px;
+            top: 145px;">Copy Game Code</button> -->
+
+            <h1 id="gamecode" style="color:#D73D60;text-align:center; -webkit-text-stroke: 3px white;font-size: 96px">Game Code :</h2> 
+            <!-- find random code funtion and display in h1 -->
+            <h1  style="color:#D73D60;text-align:center; -webkit-text-stroke: 3px white;font-size: 96px"></h1> 
+  
+            <input type="text" id="send-msg" class="chatbox" placeholder="Start chat session here">
+            <div id="rcv-msg"></div>  <!--  chat text -->
+            </box>
+            <box style="position: absolute;
+                width: 1012px;
+                height: 500px;
+                left: 214px;
+                top: 170px;
+                background: #FFFFFF;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 32px;">
+            <div class="float-container">
+
+                <div class="float-child">
+                  <div style="text-align:center; font-size: 36px">HOST</div>
+                  <div style="display: flex; justify-content: center; margin-top: 100px">
+                    <img height="150px" style="margin: auto;" id="host_avatar">
+                  </div>
+                  <div style="text-align:center; font-size: 36px; margin-top: 100px; color:white; -webkit-text-stroke: 3px #EB6DA8" id="host_name"></div>
+                </div>
+                
+                <div class="float-child">
+                  <div style="text-align:center; font-size: 36px">GUEST</div>
+                  <div style="display: flex; justify-content: center; margin-top: 100px">
+                    <img  height="150px" style="margin: auto;" id="guest_avatar">
+                  </div>
+                  <div style="text-align:center; font-size: 36px; margin-top: 100px; color: white; -webkit-text-stroke: 3px #EB6DA8" id="guest_name"></div>
+                </div>
+                
+                <button id="start-button"class="button-start" style=" position:absolute;
+                top:-10px;
+                left:400px;
+                display:none">start</button>
+               
+            </div>
+
+            
+
+            <script src = 'index.js'></script>
+    </body>
+</html>
+
+
+
+

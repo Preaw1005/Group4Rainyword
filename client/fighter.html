@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>fighter</title>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+            integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+            crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        </style>
+    </head>
+    <body>
+        <h1 id="username" style="
+        color:#EB6DA8;
+        font-size: 100px;
+        
+        text-align: center ;
+        -webkit-text-stroke: 3px black;
+        ">Welcome</h1>
+
+        <box style="position: absolute;
+        width: 1012px;
+        height: 500px;
+        left: 214px;
+        top: 270px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 32px;">
+
+        <h1 style="color: #D73D60;
+        margin-top: 24px;
+        margin-left: 190px;">Choose your fighter</h1>
+
+        <img class="avatar" id="water_avatar" src="water.png" style="position: absolute;
+        width: 136.55px;
+        height: 134.8px;
+        left: 130px;
+        top: 175px;">
+        <img class="avatar"  id="umbrella_avatar"   src="umbrella.png" style="position: absolute;
+        width: 136.55px;
+        height: 134.8px;
+        left: 450px;
+        top: 175px;
+        transform: rotate(-14.77deg);">
+        <img class="avatar"  id="wind_avatar"   src="wind.png" style="position: absolute;
+        width: 136.55px;
+        height: 134.8px;
+        left: 750px;
+        top: 175px;">
+
+        <button id="start-button"class="button-start" style="
+        margin-left: 400px; 
+        margin-top: 300px;">START</button>
+        </box>
+    
+        <script src = 'index.js'></script>
+    </body>
+</html>

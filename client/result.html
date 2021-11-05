@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Result ᕙ(`▿´)ᕗ</title>
+        <script src="https://cdn.socket.io/4.3.2/socket.io.min.js"
+            integrity="sha384-KAZ4DtjNhLChOB/hxXuKqhMLYvx3b5MlT55xPEiNmREKRzeEm+RVPlTnAn0ajQNs"
+            crossorigin="anonymous"></script>
+            <script src="https://kit.fontawesome.com/3ce5948bdf.js" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+        </style>
+        
+
+    </head>
+    <body style="background-color:#73D8F4">
+        <!-- Logo -->
+        <div> 
+            <img src="umbrella.png" alt="" class = "smallLogo">
+            <p class = "smallTextLogo">RAINY<br>WORDS</p>
+            
+        </div>
+         <!-- restart -->
+        <div>
+            <i class="fas fa-redo-alt" id="restart_icon"></i>
+                <div id="restart_text">PLAY AGAIN</div>
+            <button id="restartButton">     
+            </button>
+        </div>
+        <!-- result text -->
+        <div>
+            <p id="resultText">You Win<br>Good Job!</p>
+        </div>
+        <!-- score board -->
+        <div>
+           <div id = "scoreBoard_bg"></div> <!-- score board bg -->
+           <div> <!-- player 1 -->
+                <p class="usernameText" id="player1_username" style="left: 120px;"></p> <!-- name -->
+                <img class = "avatar" src="umbrella.png" alt="player1_avatar" id="player1_avatar"
+                style="
+                position: absolute;
+                width: 136.55px;
+                height: 134.8px;
+                left: 225px;
+                top: 560px;
+                transform: rotate(-14.77deg);" > <!-- avatar -->
+                <p id="player1_score_result" class="playerScoreResult" style="left: 391px; color: #EECB11;"><br>POINTS</p>
+           </div>
+           <div> <!-- player 2 -->
+                <p class="usernameText" id="player2_username" style="left: 691px;"></p> <!-- name -->
+                <img class = "avatar" src="water.png" alt="player2_avatar" id="player2_avatar"
+                style="position: absolute;
+                width: 163.8px;
+                height: 163.8px;
+                left: 776px;
+                top: 538px;"> <!-- avatar -->
+                <p id="player2_score_result" class="playerScoreResult" style="left: 948px; color: #AEAEAE;"><br>POINTS</p>
+             </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
